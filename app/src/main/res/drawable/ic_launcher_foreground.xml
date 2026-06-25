@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Sun (represented by a glowing circle in the upper right) -->
+    <path
+        android:pathData="M 64 36 A 14 14 0 1 1 64 64 A 14 14 0 1 1 64 36 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="78"
+                android:endY="50"
+                android:startX="50"
+                android:startY="22"
+                android:type="linear">
+                <item
+                    android:color="#FFD700"
+                    android:offset="0.0" />
+                <item
+                    android:color="#FF8C00"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Sunrays or Glow -->
+    <path
+        android:fillColor="#33FFD700"
+        android:pathData="M 64 30 A 20 20 0 1 1 64 70 A 20 20 0 1 1 64 30 Z" />
+
+    <!-- Cloud (represented by a series of overlapping curves) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,68 C33.58,68 30,64.42 30,60 C30,55.58 33.58,52 38,52 C38.5,52 38.98,52.05 39.46,52.14 C41.35,46.28 46.85,42 53.33,42 C60.91,42 67.24,47.8 67.93,55.12 C68.6,55.04 69.3,55 70,55 C74.42,55 78,58.58 78,63 C78,67.42 74.42,71 70,71 L38,71 Z" />
+</vector>

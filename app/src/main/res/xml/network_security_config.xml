@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Prevent cleartext traffic to the API domains to prevent Man-in-the-Middle (MITM) attacks -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">open-meteo.com</domain>
+    </domain-config>
+    <!-- Prevent cleartext traffic globally as a secure fallback -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
